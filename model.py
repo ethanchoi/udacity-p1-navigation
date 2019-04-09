@@ -1,3 +1,4 @@
+import os
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -82,7 +83,7 @@ def dqn(env, agent, checkpoint="checkpoint.pth", n_episodes=1800, max_t=1000, ep
             break
     return scores
 
-def plot_scores(scores):
+def plot_scores(scores, file_name):
     """
     plot the scores
     """
@@ -90,4 +91,8 @@ def plot_scores(scores):
     plt.plot(np.arange(len(scores)), scores)
     plt.ylabel('Score')
     plt.xlabel('Episode #')
+    img_dir = os.path.join('./', 'resources')
+    if not os.path.exists(img_dir):
+        os.makedirs(img_dir)
+    plt.savefig(os.path.join(img_dir, file_name))
     plt.show()
