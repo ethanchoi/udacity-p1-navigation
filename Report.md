@@ -5,6 +5,12 @@ Other learning algorithms like Dobule DQN, Prioritized Experience Replay DQN, Du
 
 The report will describe the learning algorithm with used hyper parameters, the arcitectures for neural netwoorks.
 
+### Training Code
+The code is written in PyTorch and Python3, executed in Jupyter Notebook
+- Navigation.ipynb	: Main Instruction file
+- dqn_agent.py	: Agent and ReplayBuffer Class
+- model.py	: Build QNetwork and train function
+- vanila_dqn_checkpoint.pth : Saved Model Weights
 
 ### Learning Algorithm
 #### Deep Q-Network
@@ -95,8 +101,11 @@ A plot of rewards per episode
 
 
 ### The follwoing movie shows how the trained agent works to collect bananas and the final score
+https://youtu.be/GxIUse16NSs <br/>
+   <a href="https://www.youtube.com/watch?v=GxIUse16NSs&feature=youtu.be"><img src="https://github.com/ethanchoi/udacity-p1-navigation/blob/master/resources/Banana_collector.jpg" width="240" height="180" border="10"/></a>
 
 
-https://youtu.be/GxIUse16NSs
-
-### Ideas for Futrue Work
+### Ideas for Future Work
+This project used simply the vanila DQN focusing on understanding algorithms and implementation.<br/>
+As a future work, more improved algorithms like double DQN, dueling DQN and prioritized experince replay can be applied.
+And find-out fine-tuned hyper parameters that improve the overall performance.
