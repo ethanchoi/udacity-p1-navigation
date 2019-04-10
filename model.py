@@ -86,6 +86,11 @@ def dqn(env, agent, checkpoint="checkpoint.pth", n_episodes=1800, max_t=1000, ep
 def plot_scores(scores, file_name):
     """
     plot the scores
+
+    Params
+    ======
+        scores : average scores
+        file_name : file to save the picture
     """
     fig = plt.figure()
     plt.plot(np.arange(len(scores)), scores)
