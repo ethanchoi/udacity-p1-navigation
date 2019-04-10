@@ -58,8 +58,9 @@ References
 3. [Deep Reinforcement Learning](http://mi.eng.cam.ac.uk/~mg436/LectureSlides/MLSALT7/L6.pdf)
 
 
-**NN Architecture**<br/>
-The state space has 37 dimensions and the size of action space per state is 4. so the number of input features of NN is 37 and the output size is 4.<br/>
+**Neural Network Architecture**<br/>
+The state space has 37 dimensions and the size of action space per state is 4.<br/>
+so the number of input features of NN is 37 and the output size is 4.<br/>
 And the number of hidden layers and each size is configurable in this project.<br/>
 You can input the list of hidden layers as one of the input parameters when creating an agent.<br/>
 The hidden layers used in this project is [64,32] ie, 2 layers with 64, 32 neurons in each layer. <br/>
@@ -99,6 +100,13 @@ A plot of rewards per episode
 - It shows this agent solve the environment in in 169 episodes!
 ![image](https://github.com/ethanchoi/udacity-p1-navigation/blob/master/resources/vanila_dqn.png "DQN")
 
+~~~python
+Episode 100	Average Score: 2.41
+Episode 200	Average Score: 8.68
+Episode 269	Average Score: 13.00
+Environment solved in 169 episodes!	Average Score: 13.00
+Total training time 0:03:53 s
+~~~
 
 ### The follwoing movie shows how the trained agent works to collect bananas and the final score
 https://youtu.be/GxIUse16NSs <br/>
