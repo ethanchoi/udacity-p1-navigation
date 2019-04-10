@@ -29,6 +29,7 @@ class Agent():
             action_size (int): dimension of each action
             seed (int): random seed
             hidden_layers : the list of size of hidden layers in nn
+            lr : learning rate
         """
         self.state_size = state_size
         self.action_size = action_size
